@@ -6,7 +6,7 @@
 
 ---
 
-## 🎮 Contexte
+## Contexte
 
 **Nova Clash** est un jeu mobile **free-to-play** (gratuit, monétisé par des achats intégrés), **lancé en janvier 2025**. L'objectif de ce projet est de se mettre dans la peau d'un *data analyst* du studio et de répondre à trois questions concrètes :
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 📊 Aperçu du tableau de bord
+## Aperçu du tableau de bord
 
 ![Dashboard Nova Clash](Dashboard_Nova_Clash-1.png)
 
@@ -30,7 +30,7 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ---
 
-## 🔑 Principaux enseignements
+## Principaux enseignements
 
 **Acquisition**
 - Le canal **organic** génère le plus gros chiffre d'affaires **total**… mais seulement la **3ᵉ** valeur par joueur (**ARPU**) : son volume masque une valeur moyenne. Les canaux **store_featured** et **referral** rapportent le plus **par joueur**.
@@ -48,7 +48,7 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ---
 
-## 🗂️ Contenu du dépôt
+## Contenu du dépôt
 
 | Fichier | Description |
 |---|---|
@@ -59,14 +59,14 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ---
 
-## 🛠️ Outils utilisés
+## Outils utilisés
 
 - **SQL** — DB Browser for SQLite (extraction et agrégation des données)
 - **Power BI** — modélisation légère et tableau de bord décisionnel
 
 ---
 
-## 🧠 Compétences mises en œuvre
+## Compétences mises en œuvre
 
 **SQL**
 - Agrégations, `GROUP BY`, `ORDER BY` / `LIMIT`
@@ -85,7 +85,7 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ---
 
-## ▶️ Reproduire l'analyse
+## Reproduire l'analyse
 
 1. Ouvrir `database_setup.sql` dans **DB Browser for SQLite** pour créer et remplir la base `game_analytics.db`.
 2. Exécuter les requêtes de `analyse_nova_clash.sql` pour retrouver les indicateurs.
