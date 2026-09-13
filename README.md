@@ -70,8 +70,8 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 **SQL**
 - Agrégations, `GROUP BY`, `ORDER BY` / `LIMIT`
-- Jointures et distinction **`JOIN` vs `LEFT JOIN`** (le piège du dénominateur)
-- Fonctions de dates (`date`, `strftime`, `julianday`, `+N day`)
+- Jointures et distinction **`JOIN` vs `LEFT JOIN`**
+- Fonctions de dates (`date`, `strftime`, `+N day`)
 - **Sous-requêtes / tables dérivées** (un `SUM` d'un `SUM`)
 - `CASE WHEN` pour la segmentation
 - Fonctions fenêtre (`SUM(...) OVER ()`, `NTILE`)
