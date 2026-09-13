@@ -1,4 +1,4 @@
-# Nova Clash — Analyse de données & Tableau de bord décisionnel
+# Nova Clash : Analyse de données & Tableau de bord décisionnel
 
 > Extraction d'indicateurs clés (KPI) en **SQL** et restitution dans un **tableau de bord Power BI**, à partir des données d'un jeu mobile.
 
@@ -10,15 +10,15 @@
 
 **Nova Clash** est un jeu mobile **free-to-play** (gratuit, monétisé par des achats intégrés), **lancé en janvier 2025**. L'objectif de ce projet est de se mettre dans la peau d'un *data analyst* du studio et de répondre à trois questions concrètes :
 
-1. **Acquisition** — d'où viennent les joueurs, et lesquels ont le plus de valeur ?
-2. **Engagement** — est-ce que les joueurs reviennent et prennent l'habitude de jouer ?
-3. **Monétisation** — qui paie, combien, et le revenu est-il solide ?
+1. **Acquisition** : d'où viennent les joueurs, et lesquels ont le plus de valeur ?
+2. **Engagement** : est-ce que les joueurs reviennent et prennent l'habitude de jouer ?
+3. **Monétisation** : qui paie, combien, et le revenu est-il solide ?
 
 > ⚠️ **Données simulées.** Le jeu et son jeu de données sont **fictifs**, générés pour ce projet afin de démontrer une démarche d'analyse. Aucune donnée réelle d'utilisateur n'est utilisée.
 
 **Périmètre observé :** janvier → mars 2025 (~120 premiers jours du jeu).
 **Volumétrie :** 5 000 joueurs · 50 184 sessions · 1 109 achats.
-**Modèle de données :** 3 tables — `players`, `sessions`, `purchases`.
+**Modèle de données :** 3 tables : `players`, `sessions`, `purchases`.
 
 ---
 
@@ -34,14 +34,14 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 **Acquisition**
 - Le canal **organic** génère le plus gros chiffre d'affaires **total**… mais seulement la **3ᵉ** valeur par joueur (**ARPU**) : son volume masque une valeur moyenne. Les canaux **store_featured** et **referral** rapportent le plus **par joueur**.
-- Leçon : **le volume n'est pas la valeur** — comparer les canaux au CA brut est trompeur ; il faut un ARPU par canal (et idéalement le **ROAS**, un revenu ne se jugeant jamais sans son coût).
+- Leçon : **le volume n'est pas la valeur**, comparer les canaux au CA brut est trompeur ; il faut un ARPU par canal (et idéalement le **ROAS**, un revenu ne se jugeant jamais sans son coût).
 
 **Engagement**
 - **Rétention J1 = 57,6 %**, qui chute à **20,4 % à J7** : l'attrition frappe **tôt** (la première semaine).
 - **Stickiness (DAU/MAU) ≈ 0,13**, soit **~3,6 jours de jeu par mois** pour un joueur moyen → un jeu qu'on **relance de temps en temps**, pas encore une habitude quotidienne.
 
 **Monétisation**
-- **Taux de conversion = 7,4 %** (donc **92,6 % des joueurs ne paient jamais** — le modèle F2P).
+- **Taux de conversion = 7,4 %** (donc **92,6 % des joueurs ne paient jamais** : le modèle F2P).
 - **ARPU = 2,36 €** · **ARPPU = 31,81 €**, reliés par l'identité **ARPU = conversion × ARPPU**.
 - **Les whales représentent 0,7 % de *tous* les joueurs mais 35,5 % du revenu.** Ce sont toutefois les **dolphins** qui pèsent le plus gros bloc de CA (**49 %**), le volume l'emportant sur le panier.
 - **Pareto : le top 20 % des payeurs = 55 % du CA** → concentration réelle mais **modérée**, donc un revenu plutôt **résilient** (pas dépendant d'une poignée de baleines).
@@ -61,8 +61,8 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ## Outils utilisés
 
-- **SQL** — DB Browser for SQLite (extraction et agrégation des données)
-- **Power BI** — modélisation légère et tableau de bord décisionnel
+- **SQL** : DB Browser for SQLite (extraction et agrégation des données)
+- **Power BI** : modélisation légère et tableau de bord décisionnel
 
 ---
 
@@ -93,4 +93,4 @@ Le tableau de bord est construit comme une **histoire de haut en bas**, en suiva
 
 ---
 
-*Projet personnel de data analyse — jeu de données simulé à but pédagogique.*
+*Projet personnel de data analyse : jeu de données simulé à but pédagogique.*
